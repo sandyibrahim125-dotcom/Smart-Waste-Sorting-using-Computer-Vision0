@@ -10,7 +10,10 @@ then shows the recommended recycling/treatment method for that material.
 import streamlit as st
 from PIL import Image
 
-from model.predict import inference
+ from model.predict import inference
+except Exception as e:
+    st.error(f"Model loading error: {e}")
+    st.stop()
 
 st.set_page_config(
     page_title="Smart Waste Sorting",
