@@ -10,7 +10,7 @@ import numpy as np
 from PIL import Image
 from tensorflow import keras
 
-from model.preprocess import preprocess_image
+from utils import preprocess_image
 
 MODEL_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "model", "artifacts")
 MODEL_PATH = os.path.join(MODEL_DIR, "waste_classifier.keras")
