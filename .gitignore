@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data & large artifacts
+data/
+*.zip
+
+# Model artifacts are tracked by default (usually a few MB for MobileNetV2).
+# If yours exceeds GitHub's 100MB limit, use Git LFS or a Release asset instead
+# and uncomment the two lines below:
+# model/artifacts/*.keras
+# model/artifacts/*.h5
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
